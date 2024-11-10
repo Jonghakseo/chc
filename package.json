@@ -4,6 +4,14 @@
   "authors": [
     "Renaud ROHLINGER <https://twitter.com/onirenaud>"
   ],
+  "scripts": {
+    "lint": "next lint --fix --dir app",
+    "dev": "next dev",
+    "build": "next build",
+    "analyze": "ANALYZE=true next build",
+    "start": "next start",
+    "prettier": "npx prettier --list-different \"./src/**/*.{ts,tsx,md}\" \"./app/**/*.{ts,tsx,md}\"\""
+  },
   "license": "MIT",
   "private": true,
   "engines": {
@@ -39,13 +47,5 @@
     "tailwindcss": "^3.4.0",
     "typescript": "5.6.3",
     "url-loader": "^4.1.1"
-  },
-  "scripts": {
-    "lint": "next lint --fix --dir app",
-    "dev": "next dev",
-    "build": "next build",
-    "analyze": "ANALYZE=true next build",
-    "start": "next start",
-    "prettier": "npx prettier --list-different \"./src/**/*.{ts,tsx,md}\" \"./app/**/*.{ts,tsx,md}\"\""
   }
 }
